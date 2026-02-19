@@ -177,36 +177,6 @@ export default function Program() {
           </div>
         </motion.div>
 
-        {/* Important Notes */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="bg-gradient-to-br from-slate-800 to-slate-800/50 border border-amber-500/20 rounded-2xl p-8"
-        >
-          <h3 className="text-white font-bold text-2xl mb-6 text-center">
-            Important Information
-          </h3>
-          <div className="grid sm:grid-cols-2 gap-6 text-slate-300">
-            <div>
-              <h4 className="text-amber-500 font-semibold mb-3">Dress Code</h4>
-              <p className="text-sm">Formal attire is recommended. Graduates must wear academic regalia provided by the university.</p>
-            </div>
-            <div>
-              <h4 className="text-amber-500 font-semibold mb-3">Seating</h4>
-              <p className="text-sm">Reserved seating for graduates. General seating is first-come, first-served for guests.</p>
-            </div>
-            <div>
-              <h4 className="text-amber-500 font-semibold mb-3">Photography</h4>
-              <p className="text-sm">Professional photographers will be present. Personal photography is allowed but no flash during ceremony.</p>
-            </div>
-            <div>
-              <h4 className="text-amber-500 font-semibold mb-3">Parking</h4>
-              <p className="text-sm">Complimentary parking available at the university main lot. Please arrive 30 minutes early.</p>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </div>
   );

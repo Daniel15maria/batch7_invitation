@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Award, GraduationCap } from "lucide-react";
+import { Award } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export default function ChiefGuest() {
@@ -93,36 +93,6 @@ export default function ChiefGuest() {
           </div>
         </motion.div>
 
-        {/* Additional Info */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mt-20 grid sm:grid-cols-2 gap-8"
-        >
-          <div className="bg-slate-800 border border-amber-500/20 rounded-2xl p-8">
-            <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-xl flex items-center justify-center mb-6">
-              <GraduationCap size={24} className="text-slate-900" />
-            </div>
-            <h3 className="text-white font-bold text-xl mb-3">Keynote Address</h3>
-            <p className="text-slate-400">
-              Dr. Mitchell will deliver an inspiring keynote address on "Innovation in the Digital Age: 
-              Preparing for Tomorrow's Challenges"
-            </p>
-          </div>
-
-          <div className="bg-slate-800 border border-amber-500/20 rounded-2xl p-8">
-            <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-xl flex items-center justify-center mb-6">
-              <Award size={24} className="text-slate-900" />
-            </div>
-            <h3 className="text-white font-bold text-xl mb-3">Degree Conferment</h3>
-            <p className="text-slate-400">
-              Our esteemed guest will present degrees to the graduating class and share words 
-              of wisdom to guide their future journey
-            </p>
-          </div>
-        </motion.div>
       </div>
     </div>
   );
